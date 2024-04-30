@@ -1,4 +1,4 @@
-package com.telus.todoservice;
+package com.telus.todo;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;

@@ -1,4 +1,4 @@
-package com.telus.todoservice;
+package com.telus.todo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;

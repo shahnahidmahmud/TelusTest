@@ -1,9 +1,17 @@
-package com.telus.todoservice.service;
+package com.telus.todo.service;
 
-import com.telus.todo.model.CompletionStatus;
-import com.telus.todo.model.Todo;
-import com.telus.todo.repository.TodoRepository;
-import com.telus.todo.service.TodoService;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -11,12 +19,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import com.telus.todo.model.CompletionStatus;
+import com.telus.todo.model.Todo;
+import com.telus.todo.repository.TodoRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class TodoServiceTests {
